@@ -1,0 +1,11 @@
+def jello(howdy):
+    if type(howdy) != list:
+        #makes sure that howdy is a list and if it is not a list then an error will occur. This is needed incase a user input is not a list
+        raise TypeError("Wrong type")
+    if type(howdy) == list:
+        for element in howdy:
+        #used to count the amount of variables are inside the list that is created. It is important in order to count the numbers inside the list
+            if howdy >= 0:
+                return len(howdy)
+jello('Hi')
+jello([4, 6, 9])
